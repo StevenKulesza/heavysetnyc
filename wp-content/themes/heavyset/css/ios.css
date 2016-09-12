@@ -1,0 +1,4 @@
+#myCarousel .item,
+#page .parallax {
+	background-attachment: scroll !important;
+}
