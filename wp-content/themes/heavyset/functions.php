@@ -934,7 +934,24 @@ $wp_customize->add_control( 'themeslug_hide_slide5', array(
     	),
     'priority'    => 36
 ) );
+/***************************************** Watch Section (Theme Customizer) *****************************************/
 
+$wp_customize->add_section( 'themeslug_watch_section' , array(
+   'title'       => __( 'Home Page - Watch', 'themeslug' ),
+   'priority'    => 24,
+   'description' => 'Change Home Page Watch Section',
+) );
+$wp_customize->add_setting( 
+    'themeslug_vid1',
+    array (
+        'default' => 'youtube-id',
+        ) );
+$wp_customize->add_control( 'themeslug_vid1_id', array(
+   'label'    => __( 'Video ID', 'themeslug' ),
+   'section'  => 'themeslug_watch_section',
+   'type' => 'text',
+   'priority'    => 1
+) );
 /***************************************** Social Buttons (Theme Customizer) *****************************************/
 
 $wp_customize->add_section( 'themeslug_social_section' , array(
