@@ -938,7 +938,7 @@ $wp_customize->add_control( 'themeslug_hide_slide5', array(
 
 $wp_customize->add_section( 'themeslug_watch_section' , array(
    'title'       => __( 'Home Page - Watch', 'themeslug' ),
-   'priority'    => 24,
+   'priority'    => 34,
    'description' => 'Change Home Page Watch Section',
 ) );
 $wp_customize->add_setting( 
@@ -946,7 +946,7 @@ $wp_customize->add_setting(
     array (
         'default' => 'youtube-id',
         ) );
-$wp_customize->add_control( 'themeslug_vid1_id', array(
+$wp_customize->add_control( 'themeslug_vid1', array(
    'label'    => __( 'Video ID', 'themeslug' ),
    'section'  => 'themeslug_watch_section',
    'type' => 'text',
