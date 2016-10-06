@@ -84,7 +84,7 @@
 </g>
 </svg>
 <br>
-<a class="header-text lightbox" href="https://www.youtube.com/watch?v=LWFjUzk_Qqc"><i class="fa fa-play"></i> Watch Video Now</a> 
+<a class="header-text lightbox" href="https://www.youtube.com/watch?v=<?php echo get_theme_mod( 'themeslug_vidhead' ); ?>"><i class="fa fa-play"></i> Watch Video Now</a> 
 						</div>
 					</div><!-- /.col-sm-6 -->
 				</div><!-- /.row -->				

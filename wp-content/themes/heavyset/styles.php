@@ -52,24 +52,6 @@
 	background: <?php echo get_theme_mod( 'ter-button-color-hover' ); ?>;
 	border-color: <?php echo get_theme_mod( 'ter-button-color-hover' ); ?>;
 }
-#bottom-call-out {
-	border-color: <?php echo get_theme_mod( 'prim-button-color' ); ?>;
-}
-#bottom-call-out:after {
-	border-color: <?php echo get_theme_mod( 'prim-button-color' ); ?> transparent;
-}
-
-#open-box,
-#appointment-button {
-	background-color: <?php echo get_theme_mod( 'second-button-color' ); ?>;
-}
-#open-box:hover,
-#appointment-button:hover {
-	background-color: <?php echo get_theme_mod( 'secone-button-color-hover' ); ?>;
-}
-#header-form.featured-box {
-	border-color: <?php echo get_theme_mod( 'prim-button-color' ); ?>;
-}
 
 
 /** Header Tags **/

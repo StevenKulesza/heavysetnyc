@@ -534,606 +534,6 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'them
     'priority'    => 1
 ) ) );
 
-/***************************************** Contact Info (Theme Customizer) *****************************************/
-$wp_customize->add_section( 'themeslug_contact_section' , array(
-    'title'       => __( 'Contact Info', 'themeslug' ),
-    'priority'    => 24,
-    'description' => 'Phone, address, hours',
-) );
-$wp_customize->add_setting( 
-	'themeslug_phone',
-	array (
-		'default' => '123-456-7890',
-		) );
-$wp_customize->add_control( 'themeslug_phone', array(
-    'label'    => __( 'Phone', 'themeslug' ),
-    'section'  => 'themeslug_contact_section',
-    'type' => 'text',
-    'priority'    => 1
-) );
-$wp_customize->add_setting( 
-	'themeslug_address',
-	array (
-		'default' => '123 Fake St, Atlanta, GA 30022',
-		) );
-$wp_customize->add_control( 'themeslug_address', array(
-    'label'    => __( 'Address', 'themeslug' ),
-    'section'  => 'themeslug_contact_section',
-    'type' => 'text',
-    'priority'    => 2
-) );
-$wp_customize->add_setting( 'themeslug_hours',
-	array (
-		'default' => 'Mon - Fri: 8:00am - 5:00pm',
-		 ) );
-$wp_customize->add_control( 'themeslug_hours', array(
-    'label'    => __( 'Hours', 'themeslug' ),
-    'section'  => 'themeslug_contact_section',
-    'type' => 'text',
-    'priority'    => 3
-) );
-
-/***************************************** Feature Header (Theme Customizer) *****************************************/
-
-$wp_customize->add_section( 'themeslug_fheader_section' , array(
-    'title'       => __( 'Feature Header', 'themeslug' ),
-    'priority'    => 28,
-    'description' => 'aka "The Slider"',
-) );
-$wp_customize->add_setting( 'themeslug_fheader-title',
-	array (
-		'default' => 'This is a default feature title.', 
-		) );
-$wp_customize->add_control( 'themeslug_fheader-title', array(
-    'label'    => __( 'Feature Title', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 1
-) );
-$wp_customize->add_setting( 'themeslug_fheader-descr',
-	array (
-		'default' => 'This is the feature description.', 
-		) );
-$wp_customize->add_control( 'themeslug_fheader-descr', array(
-    'label'    => __( 'Feature description', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 2
-) );
-$wp_customize->add_setting( 'themeslug_fheader-button',
-	array (
-		'default' => 'Learn More', 
-) );
-$wp_customize->add_control( 'themeslug_fheader-button', array(
-    'label'    => __( 'Button button text', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 3
-) );
-$wp_customize->add_setting( 'themeslug_fheader-link',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_fheader-link', array(
-    'label'    => __( 'Button link', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 4
-) );
-$wp_customize->add_setting( 'themeslug_fheader-pic' );
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_fheader-pic', array(
-    'label'    => __( 'Feature Image', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'settings' => 'themeslug_fheader-pic',
-    'priority'    => 5
-) ) );
-$wp_customize->add_setting( 'themeslug_change_to_slider' );
-$wp_customize->add_control( 'themeslug_change_to_slider', array(
-    'label'    => __( 'Change to animated slider', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'select',
-    'default' => 'No',
-    'choices' => array(
-    	'value1' => 'Yes',
-    	'value2' => 'No',
-    	),
-    'priority'    => 6
-) );
-$wp_customize->add_setting( 'themeslug_slide1_title',
-	array (
-		'default' => 'This is the first slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide1_title', array(
-    'label'    => __( 'Slide 1 Title', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 7
-) );
-$wp_customize->add_setting( 'themeslug_slide1_descr',
-	array (
-		'default' => 'This is the description for the first slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide1_descr', array(
-    'label'    => __( 'Slide 1 description', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 8
-) );
-$wp_customize->add_setting( 'themeslug_slide1_button',
-	array (
-		'default' => 'Learn More', 
-) );
-$wp_customize->add_control( 'themeslug_slide1_button', array(
-    'label'    => __( 'Slide 1 button button text', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 9
-) );
-$wp_customize->add_setting( 'themeslug_slide1_link',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_slide1_link', array(
-    'label'    => __( 'Slide 1 button link', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 10
-) );
-$wp_customize->add_setting( 'themeslug_slide1_pic' );
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_slide1_pic', array(
-    'label'    => __( 'Slide 1 Image', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'settings' => 'themeslug_slide1_pic',
-    'priority'    => 11
-) ) );
-$wp_customize->add_setting( 'themeslug_hide_slide1' );
-$wp_customize->add_control( 'themeslug_hide_slide1', array(
-    'label'    => __( 'Hide Slide 1', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'select',
-    'default' => 'No',
-    'choices' => array(
-    	'value1' => 'Yes',
-    	'value2' => 'No',
-    	),
-    'priority'    => 12
-) );
-$wp_customize->add_setting( 'themeslug_slide2_title',
-	array (
-		'default' => 'This is the second slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide2_title', array(
-    'label'    => __( 'Slide 2 Title', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 13
-) );
-$wp_customize->add_setting( 'themeslug_slide2_descr',
-	array (
-		'default' => 'This is the description for the second slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide2_descr', array(
-    'label'    => __( 'Slide 2 description', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 14
-) );
-$wp_customize->add_setting( 'themeslug_slide2_button',
-	array (
-		'default' => 'Learn More', 
-) );
-$wp_customize->add_control( 'themeslug_slide2_button', array(
-    'label'    => __( 'Slide 2 button button text', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 15
-) );
-$wp_customize->add_setting( 'themeslug_slide2_link',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_slide2_link', array(
-    'label'    => __( 'Slide 2 button link', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 16
-) );
-$wp_customize->add_setting( 'themeslug_slide2_pic' );
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_slide2_pic', array(
-    'label'    => __( 'Slide 2 Image', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'settings' => 'themeslug_slide2_pic',
-    'priority'    => 17
-) ) );
-$wp_customize->add_setting( 'themeslug_hide_slide2' );
-$wp_customize->add_control( 'themeslug_hide_slide2', array(
-    'label'    => __( 'Hide Slide 2', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'select',
-    'default' => 'No',
-    'choices' => array(
-    	'value1' => 'Yes',
-    	'value2' => 'No',
-    	),
-    'priority'    => 18
-) );
-$wp_customize->add_setting( 'themeslug_slide3_title',
-	array (
-		'default' => 'This is the third slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide3_title', array(
-    'label'    => __( 'Slide 3 Title', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 19
-) );
-$wp_customize->add_setting( 'themeslug_slide3_descr',
-	array (
-		'default' => 'This is the description for the third slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide3_descr', array(
-    'label'    => __( 'Slide 3 description', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 20
-) );
-$wp_customize->add_setting( 'themeslug_slide3_button',
-	array (
-		'default' => 'Learn More', 
-) );
-$wp_customize->add_control( 'themeslug_slide3_button', array(
-    'label'    => __( 'Slide 3 button button text', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 21
-) );
-$wp_customize->add_setting( 'themeslug_slide3_link',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_slide3_link', array(
-    'label'    => __( 'Slide 3 button link', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 22
-) );
-$wp_customize->add_setting( 'themeslug_slide3_pic' );
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_slide3_pic', array(
-    'label'    => __( 'Slide 3 Image', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'settings' => 'themeslug_slide3_pic',
-    'priority'    => 23
-) ) );
-$wp_customize->add_setting( 'themeslug_hide_slide3' );
-$wp_customize->add_control( 'themeslug_hide_slide3', array(
-    'label'    => __( 'Hide Slide 3', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'select',
-    'default' => 'No',
-    'choices' => array(
-    	'value1' => 'Yes',
-    	'value2' => 'No',
-    	),
-    'priority'    => 24
-) );
-$wp_customize->add_setting( 'themeslug_slide4_title',
-	array (
-		'default' => 'This is the fourth slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide4_title', array(
-    'label'    => __( 'Slide 4 Title', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 25
-) );
-$wp_customize->add_setting( 'themeslug_slide4_descr',
-	array (
-		'default' => 'This is the description for the fourth slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide4_descr', array(
-    'label'    => __( 'Slide 4 description', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 26
-) );
-$wp_customize->add_setting( 'themeslug_slide4_button',
-	array (
-		'default' => 'Learn More', 
-) );
-$wp_customize->add_control( 'themeslug_slide4_button', array(
-    'label'    => __( 'Slide 4 button button text', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 27
-) );
-$wp_customize->add_setting( 'themeslug_slide4_link',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_slide4_link', array(
-    'label'    => __( 'Slide 4 button link', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 28
-) );
-$wp_customize->add_setting( 'themeslug_slide4_pic' );
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_slide4_pic', array(
-    'label'    => __( 'Slide 4 Image', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'settings' => 'themeslug_slide4_pic',
-    'priority'    => 29
-) ) );
-$wp_customize->add_setting( 'themeslug_hide_slide4' );
-$wp_customize->add_control( 'themeslug_hide_slide4', array(
-    'label'    => __( 'Hide Slide 4', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'select',
-    'default' => 'No',
-    'choices' => array(
-    	'value1' => 'Yes',
-    	'value2' => 'No',
-    	),
-    'priority'    => 30
-) );
-$wp_customize->add_setting( 'themeslug_slide5_title',
-	array (
-		'default' => 'This is the fifth slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide5_title', array(
-    'label'    => __( 'Slide 5 Title', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 31
-) );
-$wp_customize->add_setting( 'themeslug_slide5_descr',
-	array (
-		'default' => 'This is the description for the fifth slide.', 
-		) );
-$wp_customize->add_control( 'themeslug_slide5_descr', array(
-    'label'    => __( 'Slide 5 description', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 32
-) );
-$wp_customize->add_setting( 'themeslug_slide5_button',
-	array (
-		'default' => 'Learn More', 
-) );
-$wp_customize->add_control( 'themeslug_slide5_button', array(
-    'label'    => __( 'Slide 5 button button text', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 33
-) );
-$wp_customize->add_setting( 'themeslug_slide5_link',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_slide5_link', array(
-    'label'    => __( 'Slide 5 button link', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'text',
-    'priority'    => 34
-) );
-$wp_customize->add_setting( 'themeslug_slide5_pic' );
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_slide5_pic', array(
-    'label'    => __( 'Slide 5 Image', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'settings' => 'themeslug_slide5_pic',
-    'priority'    => 35
-) ) );
-$wp_customize->add_setting( 'themeslug_hide_slide5' );
-$wp_customize->add_control( 'themeslug_hide_slide5', array(
-    'label'    => __( 'Hide Slide 5', 'themeslug' ),
-    'section'  => 'themeslug_fheader_section',
-    'type' => 'select',
-    'default' => 'No',
-    'choices' => array(
-    	'value1' => 'Yes',
-    	'value2' => 'No',
-    	),
-    'priority'    => 36
-) );
-/***************************************** Watch Section (Theme Customizer) *****************************************/
-
-$wp_customize->add_section( 'themeslug_watch_section' , array(
-   'title'       => __( 'Home Page - Watch', 'themeslug' ),
-   'priority'    => 34,
-   'description' => 'Change Home Page Watch Section',
-) );
-$wp_customize->add_setting( 
-    'themeslug_vid1',
-    array (
-        'default' => 'youtube-id',
-        ) );
-$wp_customize->add_control( 'themeslug_vid1', array(
-   'label'    => __( 'Video ID', 'themeslug' ),
-   'section'  => 'themeslug_watch_section',
-   'type' => 'text',
-   'priority'    => 1
-) );
-/***************************************** Social Buttons (Theme Customizer) *****************************************/
-
-$wp_customize->add_section( 'themeslug_social_section' , array(
-    'title'       => __( 'Footer - Social URLs', 'themeslug' ),
-    'priority'    => 36,
-    'description' => 'Social button URLs',
-) );
-$wp_customize->add_setting( 'themeslug_facebook',
-	array (
-		'default' => '#', 
-		) );
-$wp_customize->add_control( 'themeslug_facebook', array(
-    'label'    => __( 'Facebook URL', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'text',
-    'priority'    => 1,
- ) );
-$wp_customize->add_setting( 'themeslug_facebook-off',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_facebook-off', array(
-    'label'    => __( 'Hide Facebok', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'checkbox',
-    'priority'    => 2,
-) );
- 
-/*** Google Plus (Theme Customizer) ***/
-$wp_customize->add_setting( 'themeslug_gplus',
-	array (
-		'default' => '#', 
-		) );
-$wp_customize->add_control( 'themeslug_gplus', array(
-    'label'    => __( 'Google+ URL', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'text',
-    'priority'    => 3,
- ) );
-$wp_customize->add_setting( 'themeslug_gplus-off',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_gplus-off', array(
-    'label'    => __( 'Hide Google+', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'checkbox',
-    'priority'    => 4,
-) );
-
-/*** Twitter (Theme Customizer) ***/
-$wp_customize->add_setting( 'themeslug_twitter',
-	array (
-		'default' => '#', 
-		) );
-$wp_customize->add_control( 'themeslug_twitter', array(
-    'label'    => __( 'Twitter URL', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'text',
-    'priority'    => 5,
- ) );
-$wp_customize->add_setting( 'themeslug_twitter-off',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_twitter-off', array(
-    'label'    => __( 'Hide Twitter', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'checkbox',
-    'priority'    => 6,
-) );
- 
-/*** Instagram (Theme Customizer) ***/
-$wp_customize->add_setting( 'themeslug_instagram',
-	array (
-		'default' => '#',
-		 ) );
-$wp_customize->add_control( 'themeslug_instagram', array(
-    'label'    => __( 'Instagram URL', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'text',
-    'priority'    => 7,
-) );
-$wp_customize->add_setting( 'themeslug_instagram-off',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_instagram-off', array(
-    'label'    => __( 'Hide Instagram', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'checkbox',
-    'priority'    => 8,
-) );
-
-/*** LinkedIn (Theme Customizer) ***/
-$wp_customize->add_setting( 'themeslug_linkedin',
-	array (
-		'default' => '#',
-		 ) );
-$wp_customize->add_control( 'themeslug_linkedin', array(
-    'label'    => __( 'LinkedIn URL', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'text',
-    'priority'    => 9,
-) );
-$wp_customize->add_setting( 'themeslug_linkedin-off',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_linkedin-off', array(
-    'label'    => __( 'Hide LinkedIn', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'checkbox',
-    'priority'    => 10,
-) );
-
-/*** Pinterest (Theme Customizer) ***/
-$wp_customize->add_setting( 'themeslug_pinterest',
-	array (
-		'default' => '#',
-		 ) );
-$wp_customize->add_control( 'themeslug_pinterest', array(
-    'label'    => __( 'Pinterest URL', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'text',
-    'priority'    => 11,
-) );
-$wp_customize->add_setting( 'themeslug_pinterest-off',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_pinterest-off', array(
-    'label'    => __( 'Hide Pinterest', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'checkbox',
-    'priority'    => 12,
-) );
-
-/*** YouTube (Theme Customizer) ***/
-$wp_customize->add_setting( 'themeslug_youtube',
-	array (
-		'default' => '#',
-		 ) );
-$wp_customize->add_control( 'themeslug_youtube', array(
-    'label'    => __( 'YouTube URL', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'text',
-    'priority'    => 13,
-) );
-$wp_customize->add_setting( 'themeslug_youtube-off',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_youtube-off', array(
-    'label'    => __( 'Hide YouTube', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'checkbox',
-    'priority'    => 14,
-) );
-
-/*** FourSquare (Theme Customizer) ***/
-$wp_customize->add_setting( 'themeslug_foursquare',
-	array (
-		'default' => '#',
-		 ) );
-$wp_customize->add_control( 'themeslug_foursquare', array(
-    'label'    => __( 'FourSquare URL', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'text',
-    'priority'    => 15,
-) );
-$wp_customize->add_setting( 'themeslug_foursquare-off',
-	array (
-		'default' => '#', 
-) );
-$wp_customize->add_control( 'themeslug_foursquare-off', array(
-    'label'    => __( 'Hide FourSquare', 'themeslug' ),
-    'section'  => 'themeslug_social_section',
-    'type' => 'checkbox',
-    'priority'    => 16,
-) );
-
 /******** Colors *********/
 $wp_customize->add_setting(
     'skrollr-header-color',
@@ -1382,8 +782,84 @@ $wp_customize->add_control(
         )
     )
 );
+/***************************************** Homepage - Video Header (Theme Customizer) *****************************************/
+$wp_customize->add_section( 'themeslug_videoheader_section' , array(
+    'title'       => __( 'Video Header (Home Page)', 'themeslug' ),
+    'priority'    => 4,
+    'description' => 'Paste the youtube video ID you want to show up for the header of the website.',
+) );
+$wp_customize->add_setting( 
+	'themeslug_vidhead',
+	array (
+		'default' => 'youtube video id',
+		) );
+$wp_customize->add_control( 'themeslug_vidhead', array(
+    'label'    => __( 'Video Header', 'themeslug' ),
+    'section'  => 'themeslug_videoheader_section',
+    'type' => 'text',
+    'priority'    => 1
+) );
+$wp_customize->add_setting( 
+	'themeslug_vidstart',
+	array (
+		'default' => 'start seconds',
+		) );
+$wp_customize->add_control( 'themeslug_vidstart', array(
+    'label'    => __( 'Video Start Time in Seconds', 'themeslug' ),
+    'section'  => 'themeslug_videoheader_section',
+    'type' => 'text',
+    'priority'    => 1
+) );
+$wp_customize->add_setting( 
+	'themeslug_vidend',
+	array (
+		'default' => 'end seconds',
+		) );
+$wp_customize->add_control( 'themeslug_vidend', array(
+    'label'    => __( 'Video End Time in Seconds', 'themeslug' ),
+    'section'  => 'themeslug_videoheader_section',
+    'type' => 'text',
+    'priority'    => 1
+) );
 
-
+/***************************************** Homepage - Video Section (Theme Customizer) *****************************************/
+$wp_customize->add_section( 'themeslug_video_section' , array(
+    'title'       => __( 'Video Section (Home Page)', 'themeslug' ),
+    'priority'    => 14,
+    'description' => 'Paste the youtube video ID you want to show up on the row.',
+) );
+$wp_customize->add_setting( 
+	'themeslug_vidone',
+	array (
+		'default' => 'youtube video id',
+		) );
+$wp_customize->add_control( 'themeslug_vidone', array(
+    'label'    => __( 'Video 1', 'themeslug' ),
+    'section'  => 'themeslug_video_section',
+    'type' => 'text',
+    'priority'    => 1
+) );
+$wp_customize->add_setting( 
+	'themeslug_vidtwo',
+	array (
+		'default' => 'youtube video id',
+		) );
+$wp_customize->add_control( 'themeslug_vidtwo', array(
+    'label'    => __( 'Video 2', 'themeslug' ),
+    'section'  => 'themeslug_video_section',
+    'type' => 'text',
+    'priority'    => 2
+) );
+$wp_customize->add_setting( 'themeslug_vidthree',
+	array (
+		'default' => 'youtube video id',
+		 ) );
+$wp_customize->add_control( 'themeslug_vidthree', array(
+    'label'    => __( 'Video 3', 'themeslug' ),
+    'section'  => 'themeslug_video_section',
+    'type' => 'text',
+    'priority'    => 3
+) );
 
 }
 

@@ -48,10 +48,6 @@
 	<link href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/mobile.css" rel="stylesheet" media="screen">
 <?php endif; ?>
 
-<?php if (is_page('resources')) : ?>
-	<script src="http://www.smartsite.tv/remote/smart.php?oid=Q3zz8By52" type="text/javascript"></script>
-<?php endif; ?>
-
 </head>
 
 <body <?php body_class(); ?>>

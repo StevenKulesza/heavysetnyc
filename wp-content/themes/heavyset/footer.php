@@ -146,7 +146,7 @@
 	var tv,
 			playerDefaults = {autoplay: 0, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
 	var vid = [
-				{'videoId': 'LWFjUzk_Qqc', 'startSeconds': 48, 'endSeconds': 170, 'suggestedQuality': 'hd720'},
+				{'videoId': '<?php echo get_theme_mod( 'themeslug_vidhead' ); ?>', 'startSeconds': <?php echo get_theme_mod( 'themeslug_vidstart' ); ?>, 'endSeconds': <?php echo get_theme_mod( 'themeslug_vidend' ); ?>, 'suggestedQuality': 'hd720'},
 			],
 			randomvid = Math.floor(Math.random() * (vid.length - 1 + 1));
 	

@@ -20,9 +20,7 @@
 				</h1>
 			<?php endif; // is_single() ?>
 
-	<?php the_excerpt($length); ?>
-	<br>
-	<br>
+	<?php /* the_excerpt($length); */ ?>
 		<a href="<?php the_permalink(); ?>" title="Read More" class="btn btn-primary btn-sm">Read More <i class="fa fa-angle-right"></i></a>
 	</div>
 </div>
