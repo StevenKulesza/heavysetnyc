@@ -1297,11 +1297,35 @@ footer#colophon .featured-box {
 .cta-img {
 	background: url(images/parallax-why-should2.jpg);
 }
-section.artists{
-    background: url(images/home-bg.jpg) no-repeat top center;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
+section.artistContainer{
+	background: #000;
+	color: #fff;
+	padding: 100px 0;
+	overflow: hidden;
+	position: relative;
+}
+section.artistContainer:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('images/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+section.artists .btn{
+	font-size: 40px;
 }
 /* Featurettes
 ------------------------- */

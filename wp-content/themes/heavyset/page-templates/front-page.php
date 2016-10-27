@@ -33,12 +33,11 @@ get_header(); ?>
 					<?php get_template_part( 'front-posts' ); ?>
 				</div>
 			</div>
-			<section class="artists parallax">
-				<div class="wide fCheck" id="section2">
-					<a class="btn btn-primary btn-lg" href="https://soundcloud.com/heavysetrecordsnyc">LISTEN TO OUR ARTISTS</a>
+			<section class="artistContainer">
+				<div class="wide artists fCheck" id="section2">
+					<a class="btn btn-primary btn-lg" href="https://soundcloud.com/heavysetrecordsnyc"><i class="fa fa-soundcloud"></i> LISTEN TO OUR ARTISTS</a>
 
 				</div>
-				<div class="shader"></div>
 			</section>
 			<!-- <div class="wide gray fCheck" id="section2">
 				<div class="container">
