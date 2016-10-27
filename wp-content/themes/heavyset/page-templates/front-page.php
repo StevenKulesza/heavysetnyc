@@ -35,7 +35,7 @@ get_header(); ?>
 			</div>
 			<section class="artistContainer">
 				<div class="wide artists text-center fCheck" id="section2">
-					<a class="btn btn-primary btn-lg lightbox" href="https://api.soundcloud.com/users/232637701?lightbox[width]=600&lightbox[height]=400"><i class="fa fa-soundcloud"></i> LISTEN TO OUR ARTISTS <i class="fa fa-angle-right"></i></a>
+					<a class="btn btn-primary btn-lg lightbox" href="https://api.soundcloud.com/users/232637701?lightbox[width]=450&lightbox[height]=300&lightbox[modal]><i class="fa fa-soundcloud"></i> LISTEN TO OUR ARTISTS <i class="fa fa-angle-right"></i></a>
 
 				</div>
 			</section>
