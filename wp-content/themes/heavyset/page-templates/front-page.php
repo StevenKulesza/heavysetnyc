@@ -35,7 +35,7 @@ get_header(); ?>
 			</div>
 			<section class="artistContainer">
 				<div class="wide artists text-center fCheck" id="section2">
-					<a class="btn btn-primary btn-lg lightbox" href="https://soundcloud.com/heavysetrecordsnyc?lightbox[width]=600&lightbox[height]=400"><i class="fa fa-soundcloud"></i> LISTEN TO OUR ARTISTS <i class="fa fa-angle-right"></i></a>
+					<a class="btn btn-primary btn-lg lightbox" href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/232637701&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true?lightbox[width]=600&lightbox[height]=400"><i class="fa fa-soundcloud"></i> LISTEN TO OUR ARTISTS <i class="fa fa-angle-right"></i></a>
 
 				</div>
 			</section>
