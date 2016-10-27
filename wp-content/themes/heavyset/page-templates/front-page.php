@@ -33,7 +33,7 @@ get_header(); ?>
 					<?php get_template_part( 'front-posts' ); ?>
 				</div>
 			</div>
-			<section class="artists">
+			<section class="artists parallax">
 				<div class="wide fCheck" id="section2">
 					<a class="btn btn-primary btn-lg" href="https://soundcloud.com/heavysetrecordsnyc">LISTEN TO OUR ARTISTS</a>
 
