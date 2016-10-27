@@ -1321,10 +1321,14 @@ section.artistContainer:before {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: cover;
+    background-size: cover;   
+    background-attachment: fixed;
 }
-
-section.artists .btn{
+section.artists {
+	z-index: 1;
+    position: relative;
+}
+section.artists .btn.btn-primary.btn-lg{
 	font-size: 40px;
 }
 /* Featurettes
