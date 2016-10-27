@@ -1297,6 +1297,12 @@ footer#colophon .featured-box {
 .cta-img {
 	background: url(images/parallax-why-should2.jpg);
 }
+section.artists{
+    background: url(images/home-bg.jpg) no-repeat top center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
 /* Featurettes
 ------------------------- */
 

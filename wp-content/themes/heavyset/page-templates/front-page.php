@@ -33,7 +33,13 @@ get_header(); ?>
 					<?php get_template_part( 'front-posts' ); ?>
 				</div>
 			</div>
-			<div class="wide gray fCheck" id="section2">
+			<section class="artists">
+				<div class="wide fCheck" id="section2">
+					<a class="btn btn-primary btn-lg" href="https://soundcloud.com/heavysetrecordsnyc">LISTEN TO OUR ARTISTS</a>
+
+				</div>
+			</section>
+			<!-- <div class="wide gray fCheck" id="section2">
 				<div class="container">
 					<h1>Artists</h1>
 					<hr class="thick">
@@ -70,7 +76,7 @@ get_header(); ?>
 					    </div>
 					</div>
 				</div>
-			</div>				
+			</div>		 -->		
 			<div class="wide fCheck" id="section3">
 				<div class="container">
 					<h1>Watch</h1>
