@@ -1313,7 +1313,7 @@ section.artistContainer:before {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.15;
     background-image: url('images/home-bg.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -1328,7 +1328,7 @@ section.artists {
 	z-index: 1;
     position: relative;
 }
-section.artists .btn.btn-primary.btn-lg{
+section.artistContainer .btn{
 	font-size: 40px;
 }
 /* Featurettes

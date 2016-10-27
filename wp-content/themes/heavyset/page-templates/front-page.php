@@ -34,8 +34,8 @@ get_header(); ?>
 				</div>
 			</div>
 			<section class="artistContainer">
-				<div class="wide artists fCheck" id="section2">
-					<a class="btn btn-primary btn-lg" href="https://soundcloud.com/heavysetrecordsnyc"><i class="fa fa-soundcloud"></i> LISTEN TO OUR ARTISTS</a>
+				<div class="wide artists text-center fCheck" id="section2">
+					<a class="btn btn-primary btn-lg" href="https://soundcloud.com/heavysetrecordsnyc"><i class="fa fa-soundcloud"></i> LISTEN TO OUR ARTISTS <i class="fa fa-angle-right"></i></a>
 
 				</div>
 			</section>
