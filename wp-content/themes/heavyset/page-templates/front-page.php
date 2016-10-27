@@ -63,7 +63,7 @@ get_header(); ?>
 					        <div class="featured-box artist">
 					           <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/listen.jpg" alt="thwag-lord-rectangle" width="600" height="400" class="aligncenter size-full wp-image-3971" />
 					            <div class="artist-text">
-					                <h3>Listen <i class="fa fa-angle-right"></i></h3>
+					                <h3>Artists <i class="fa fa-angle-right"></i></h3>
 					            </div>
 					        </div>
 					    </a>
