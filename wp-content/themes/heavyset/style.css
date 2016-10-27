@@ -1324,7 +1324,7 @@ section.artistContainer:before {
     background-size: cover;   
     background-attachment: fixed;
 }
-section.artists {
+section.artistContainer .artists {
 	z-index: 1;
     position: relative;
 }
