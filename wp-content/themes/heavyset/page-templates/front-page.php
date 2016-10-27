@@ -38,6 +38,7 @@ get_header(); ?>
 					<a class="btn btn-primary btn-lg" href="https://soundcloud.com/heavysetrecordsnyc">LISTEN TO OUR ARTISTS</a>
 
 				</div>
+				<div class="shader"></div>
 			</section>
 			<!-- <div class="wide gray fCheck" id="section2">
 				<div class="container">
