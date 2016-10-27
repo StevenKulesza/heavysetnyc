@@ -35,7 +35,7 @@ get_header(); ?>
 			</div>
 			<section class="artistContainer">
 				<div class="wide artists text-center fCheck" id="section2">
-					<a class="btn btn-primary btn-lg lightbox" href="http://heavysetrecordsnyc.com/artists?lightbox[iframe]=true&lightbox[width]=700&lightbox[height]=580"><i class="fa fa-soundcloud"></i> LISTEN TO OUR ARTISTS <i class="fa fa-angle-right"></i></a>
+					<a class="btn btn-primary btn-lg lightbox" href="http://heavysetrecordsnyc.com/artists?lightbox[iframe]=true&lightbox[width]=80p&lightbox[height]=80p"><i class="fa fa-soundcloud"></i> LISTEN TO OUR ARTISTS <i class="fa fa-angle-right"></i></a>
 				</div>
 			</section>
 			<!-- <div class="wide gray fCheck" id="section2">
